@@ -1,15 +1,16 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
+var styles = require('../styles');
 
 var Home = React.createClass({
 	render: function() {
 		return (
-			<div className="jumbotron col-md-12 text-center">
-				<h1>Weather App</h1>
-				<p className="lead">Check the weather... with class!</p>
+			<div style={styles.mainPage}>
+				<h1 style={styles.formHeader}>Weather App</h1>
+				<p style={styles.whiteFont} className="lead">Check the weather... with React!</p>
 				<Link to='/pickCity'>
-					<button type="button" className="btn btn-lg btn-success">Get Started</button>
+					<button type="button" className="btn btn-success">Get Started</button>
 				</Link>
 			</div>
 		)

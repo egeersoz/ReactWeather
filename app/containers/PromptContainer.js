@@ -1,5 +1,6 @@
 var React = require('react');
 var Prompt = require('../components/Prompt');
+var styles = require('../styles');
 
 var PromptContainer = React.createClass({
 	contextTypes: {
@@ -31,7 +32,7 @@ var PromptContainer = React.createClass({
 				}
 			});
 		} else {
-			this.context.router.push('/pickDay/' + this.state.city);
+			this.context.router.push('/forecast/' + this.state.city);
 		}
 	},
 	render: function() {

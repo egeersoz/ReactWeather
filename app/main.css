@@ -1,0 +1,11 @@
+html, body, #app {
+	height: 100%;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.weather-navbar {
+	background: rgba(252, 90, 44, 0.89);
+}

@@ -1,17 +1,12 @@
-var React = require('React');
+var React = require('react');
+var styles = require('../styles');
 
 var Navbar = React.createClass({
 	render: function() {
 		return (
-			<nav className="navbar navbar-default">
-				<div className="container-fluid">
-					<div className="navbar-header">
-						<div className="navbar-brand">
-							{this.props.brand}
-						</div>
-					</div>
-				</div>
-			</nav>
+			<div style={styles.navbar}>
+				<h3 style={styles.smallMargin}>ReactWeather</h3>
+			</div>
 		)
 	}
 });

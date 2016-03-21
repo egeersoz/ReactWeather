@@ -13,8 +13,18 @@ var helpers = {
 				console.warn("An error occurred: " + err);
 			})
 	},
-	getSixteenDayForecast: function(location) {
-
+	convertEpochToRegular: function(seconds) {
+		var d = new Date(0);
+		d.setUTCSeconds(seconds);
+		return d.toDateString();
+	},
+	convertKToF: function(kelvinDegrees) {
+		var kelvin = parseInt(kelvinDegrees);
+		var fahrenheit = (kelvinDegrees - 273.15) * 1.8 + 32;
+		return Math.ceil(fahrenheit);
+	},
+	capitalizeDescription: function(string) {
+	    return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 }
 
