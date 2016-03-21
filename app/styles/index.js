@@ -31,7 +31,7 @@ var styles = {
 	},
 	mainPage: {
 		backgroundSize: 'cover',
-	    backgroundImage: 'url("app/images/pattern.svg")',
+	    backgroundImage: 'url("../app/images/pattern.svg")',
 	    display: 'flex',
 	    flexDirection: 'column',
 	    justifyContent: 'center',

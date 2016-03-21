@@ -20,7 +20,7 @@ var helpers = {
 	},
 	convertKToF: function(kelvinDegrees) {
 		var kelvin = parseInt(kelvinDegrees);
-		var fahrenheit = (kelvinDegrees - 273.15) * 1.8 + 32;
+		var fahrenheit = (kelvinDegrees) * 1.8 - 459.67;
 		return Math.ceil(fahrenheit);
 	},
 	capitalizeDescription: function(string) {

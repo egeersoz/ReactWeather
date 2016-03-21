@@ -4,7 +4,6 @@ var Forecast = require('./Forecast');
 
 var Weather = React.createClass({
 	render: function() {
-		console.log(this.props);
 		return (
 			<div className="col-md-4 col-md-offset-4 text-center" style={styles.weatherListing}>
 				<Forecast 
